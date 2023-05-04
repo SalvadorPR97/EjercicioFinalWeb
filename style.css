@@ -1,0 +1,59 @@
+/* Label selectors*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+figure{
+    padding: 0px;
+}
+figure img{
+    width: 100%;
+}
+footer img{
+    max-width: 80px;
+}
+span[class~=position-absolute]{
+    transform: rotate(30deg);
+    left: 30%;
+    top: 35%;
+}
+section iframe{
+    min-height: 350px;
+    visibility: visible;
+}
+
+/*Class selector*/
+.logoCabecera{
+    max-width: 300px;
+}
+.characterVerde{
+    color: rgb(56, 180, 73);
+}
+
+/* Own Classes*/
+.bgGreen{
+    background-color:rgb(56, 180, 73);
+}
+
+/*Hover*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    border: 0px;
+}
+
+/*Media Querys*/
+@media(max-width: 766px){
+    section iframe{
+        visibility: hidden;
+    }
+    footer img{
+        max-width: 50px;
+    }
+}
